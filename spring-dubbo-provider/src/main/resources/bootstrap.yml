@@ -1,0 +1,16 @@
+server:
+  port: ${SERVER_PORT:8071}
+spring:
+  application:
+    name: spring-dubbo-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${REGISTER_HOST:localhost}:${REGISTER_PORT:8848}
+      config:
+        server-addr: ${REGISTER_HOST:localhost}:${REGISTER_PORT:8848}
+        file-extension: yml
+logging:
+  level:
+    root: info
+
