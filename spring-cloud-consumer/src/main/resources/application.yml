@@ -6,6 +6,11 @@ spring:
   application:
     name: spring-cloud-consumer
 
+  cloud:
+    loadbalancer:
+      ribbon:
+        enable: true
+
 
 management:
   endpoints:

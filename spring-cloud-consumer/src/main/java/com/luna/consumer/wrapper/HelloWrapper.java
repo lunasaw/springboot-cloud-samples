@@ -1,11 +1,14 @@
-package com.luna.wrapper;
+package com.luna.consumer.wrapper;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient("lunaServer")
-public interface HelloClient {
+/**
+ * @author weidian
+ */
+@FeignClient(value = "spring-cloud-provider", name = "")
+public interface HelloWrapper {
 
     /**
      * client say hello

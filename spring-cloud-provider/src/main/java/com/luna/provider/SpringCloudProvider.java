@@ -1,9 +1,8 @@
-package com.luna;
+package com.luna.provider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @author chenzhangyue
@@ -11,10 +10,9 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  */
 @EnableDiscoveryClient
 @SpringBootApplication
-@EnableFeignClients
-public class SpringCloudConsumer {
+public class SpringCloudProvider {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringCloudConsumer.class, args);
+        SpringApplication.run(SpringCloudProvider.class, args);
     }
 }
