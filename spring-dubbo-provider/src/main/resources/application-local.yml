@@ -48,11 +48,6 @@ logging:
       max-history: 7
       max-file-size: 200MB
 
-dubbo:
-  application:
-    name: spring-dubbo-provider
-    logger: slf4j
-
 feign:
   sentinel:
     enabled: true

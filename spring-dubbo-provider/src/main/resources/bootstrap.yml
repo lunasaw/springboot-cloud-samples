@@ -10,6 +10,9 @@ spring:
       config:
         server-addr: ${REGISTER_HOST:localhost}:${REGISTER_PORT:8848}
         file-extension: yml
+        import-check:
+          enabled: false
+
 logging:
   level:
     root: info
