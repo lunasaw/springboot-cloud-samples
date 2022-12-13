@@ -17,6 +17,10 @@
     </properties>
 
     <dependencies>
-
+        <dependency>
+            <groupId>com.luna</groupId>
+            <artifactId>spring-cloud-model</artifactId>
+            <version>${spring.cloud.model.version}</version>
+        </dependency>
     </dependencies>
 </project>
