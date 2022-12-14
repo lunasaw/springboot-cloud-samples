@@ -8,6 +8,8 @@ import org.springframework.util.StringUtils;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+
 /**
  * @author chenzhangyue
  * 2022/12/9
@@ -32,7 +34,7 @@ public class HelloController {
     }
 
     @PostMapping("/addHello")
-    public Boolean addHello(@RequestBody @Validated UserReq userReq) {
+    public Boolean addHello(@Valid @RequestBody UserReq userReq) {
         return StringTools.isNoneBlank(userReq.getName());
     }
 }
